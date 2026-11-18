@@ -1,0 +1,44 @@
+body {
+  font-family: Arial;
+  background: #eee;
+  text-align: center;
+}
+
+form {
+  background: white;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#message {
+  margin: 10px 0 0 0;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.back {
+  text-align: center;
+}
