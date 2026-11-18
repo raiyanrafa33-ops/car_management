@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Yu Gothic UI, sans-serif;
+}
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+nav h2 {
+    color: white;
+    margin-left: 20px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 25px 30px;
+}
+nav a:hover,
+nav a.active {
+    background: navy;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.cue-card {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    border: 1px solid black;
+    padding: 15px;
+    display: none;
+}
+/* Page Spacing */
+.container {
+    margin: 20px 40px;
+}
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.order-table th, 
+.order-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}

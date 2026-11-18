@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarSphere - Customer Dashboard</title>
+    <link rel="icon" href="../homePage/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>Welcome to CarSphere</h2>
+        <div class="nav-right">
+            <ul>
+                <li><a href="../customer_dashboard/Customer_Dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="../homePage/home.html">Home</a></li>
+                <li><a href="../cars/cars.html">Cars</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+                <li><a href="../contacts/contacts.html">Contacts</a></li>
+            </ul>
+            <!-- Profile Section -->
+            <div class="profile">
+                <img id="navAvatar" src="Guest.jpg" alt="Profile">
+                <!-- Cue Card -->
+                <div id="cueCard" class="cue-card">
+                    <!-- Guest View -->
+                    <div id="guestContent">
+                        <p>You are not signed in.</p>
+                        <a href="../login/login.html">Login / Sign In</a>
+                    </div>
+                    <!-- User View -->
+                    <div id="userContent" style="display: none;">
+                        <p><b>Sabbir Ahmed</b></p>
+                        <p>sabbir.carsphere@gmail.com</p>
+                        <button id="logoutBtn">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+            <button id="toggleBtn">State: Guest</button>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Customer Details (Using Native HTML Table for Clean Alignment) -->
+        <h2>Customer Details</h2>
+        <form>
+            <table cellpadding="6">
+                <tr>
+                    <td><b>Full Name:</b></td>
+                    <td><input type="text" value="Sabbir Ahmed" readonly></td>
+                    <td><b>Email:</b></td>
+                    <td><input type="email" value="sabbir.carsphere@gmail.com" readonly></td>
+                </tr>
+                <tr>
+                    <td><b>Phone:</b></td>
+                    <td><input type="text" value="+880 1712-345678" readonly></td>
+                    <td><b>NID / License:</b></td>
+                    <td><input type="text" value="DL-90821-BD" readonly></td>
+                </tr>
+                <tr>
+                    <td><b>Address:</b></td>
+                    <td><input type="text" value="Uttara, Dhaka" readonly></td>
+                    <td><b>Status:</b></td>
+                    <td><input type="text" value="Active (Verified Customer)" readonly></td>
+                </tr>
+            </table>
+        </form>
+        <!-- Order History (Using Native HTML Table Border & Cellpadding) -->
+        <h2>Order History</h2>
+        <table class="order-table">
+            <tr>
+                <th>Order ID</th>
+                <th>Car Ordered</th>
+                <th>Price</th>
+                <th>Order Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>#ORD-101</td>
+                <td>Lamborghini Aventador SVJ</td>
+                <td>$1,800.00</td>
+                <td>2026-11-10</td>
+                <td>Delivered</td>
+            </tr>
+            <tr>
+                <td>#ORD-102</td>
+                <td>Rolls-Royce Phantom Series II</td>
+                <td>$2,200.00</td>
+                <td>2026-11-15</td>
+                <td>Confirmed</td>
+            </tr>
+            <tr>
+                <td>#ORD-103</td>
+                <td>Tesla Cybertruck</td>
+                <td>$900.00</td>
+                <td>2026-11-18</td>
+                <td>Pending</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
