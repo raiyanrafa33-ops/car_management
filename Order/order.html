@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarSphere - Order</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+    <!-- Menu bar (sticky) -->
+    <div class="navbar">
+        <h2>Welcome to CarSphere</h2>
+        <a href="../home/home.html">Home</a>
+        <a href="../cars/cars.html">Cars</a>
+        <a href="#cars">Order</a>
+        <a href="../login/login.html">Logout</a>
+    </div>
+
+    <!-- Fixed cart button -->
+    <a href="#cart" class="fixed-cart">My Cart</a>
+
+    <!-- ================= CAR LIST ================= -->
+    <div class="section" id="cars">
+        <h2>Available Cars</h2>
+
+        <!-- Car 1 -->
+        <div class="car">
+            <div class="car-img">
+                <img src="l.png" alt="Lamborghini" width="450">
+            </div>
+            <div class="car-info">
+                <h3>Lamborghini [Aventador SVJ]</h3>
+                <table>
+                    <tr><td>Engine</td><td>6.5L V12</td></tr>
+                    <tr><td>Power</td><td>759 hp</td></tr>
+                    <tr><td>Top Speed</td><td>350 km/h</td></tr>
+                    <tr><td>Seats</td><td>2</td></tr>
+                </table>
+                <p class="price">$520,000</p>
+                <input type="checkbox" id="c1">
+                <label for="c1">Add to compare</label>
+                <br><br>
+                <a href="#cart" class="btn blue">Add to Cart</a>
+                <a href="#order" class="btn orange">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="car">
+            <div class="car-img">
+                <img src="rr.png" alt="Rolls-Royce" width="450">
+            </div>
+            <div class="car-info">
+                <h3>Rolls-Royce [Phantom Series II]</h3>
+                <table>
+                    <tr><td>Engine</td><td>6.75L Twin-Turbo V12</td></tr>
+                    <tr><td>Power</td><td>563 hp</td></tr>
+                    <tr><td>Top Speed</td><td>250 km/h</td></tr>
+                    <tr><td>Seats</td><td>5</td></tr>
+                </table>
+                <p class="price">$470,000</p>
+                <input type="checkbox" id="c2">
+                <label for="c2">Add to compare</label>
+                <br><br>
+                <a href="#cart" class="btn blue">Add to Cart</a>
+                <a href="#order" class="btn orange">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="car">
+            <div class="car-img">
+                <img src="bug.png" alt="Bugatti" width="450">
+            </div>
+            <div class="car-info">
+                <h3>Bugatti [Chiron Pur Sport]</h3>
+                <table>
+                    <tr><td>Engine</td><td>8.0L W16 Quad-Turbo</td></tr>
+                    <tr><td>Power</td><td>1500 hp</td></tr>
+                    <tr><td>Top Speed</td><td>350 km/h</td></tr>
+                    <tr><td>Seats</td><td>2</td></tr>
+                </table>
+                <p class="price">$3,600,000</p>
+                <input type="checkbox" id="c3">
+                <label for="c3">Add to compare</label>
+                <br><br>
+                <a href="#cart" class="btn blue">Add to Cart</a>
+                <a href="#order" class="btn orange">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Car 4 -->
+        <div class="car">
+            <div class="car-img">
+                <img src="mb.png" alt="Mercedes" width="450">
+            </div>
+            <div class="car-info">
+                <h3>Mercedes-Benz [G 65 AMG Final Edition]</h3>
+                <table>
+                    <tr><td>Engine</td><td>6.0L Twin-Turbo V12</td></tr>
+                    <tr><td>Power</td><td>621 hp</td></tr>
+                    <tr><td>Top Speed</td><td>230 km/h</td></tr>
+                    <tr><td>Seats</td><td>5</td></tr>
+                </table>
+                <p class="price">$300,000</p>
+                <input type="checkbox" id="c4">
+                <label for="c4">Add to compare</label>
+                <br><br>
+                <a href="#cart" class="btn blue">Add to Cart</a>
+                <a href="#order" class="btn orange">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Car 5 -->
+        <div class="car">
+            <div class="car-img">
+                <img src="tesla.png" alt="Tesla" width="450">
+            </div>
+            <div class="car-info">
+                <h3>Tesla [Cybertruck]</h3>
+                <table>
+                    <tr><td>Engine</td><td>Electric Tri-Motor</td></tr>
+                    <tr><td>Power</td><td>845 hp</td></tr>
+                    <tr><td>Top Speed</td><td>209 km/h</td></tr>
+                    <tr><td>Seats</td><td>5</td></tr>
+                </table>
+                <p class="price">$80,000</p>
+                <input type="checkbox" id="c5">
+                <label for="c5">Add to compare</label>
+                <br><br>
+                <a href="#cart" class="btn blue">Add to Cart</a>
+                <a href="#order" class="btn orange">Order Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= COMPARE ================= -->
+    <div class="section" id="compare">
+        <h2>Compare Cars</h2>
+        <table class="big-table">
+            <tr class="head">
+                <td>Feature</td>
+                <td>Lamborghini</td>
+                <td>Rolls-Royce</td>
+                <td>Bugatti</td>
+                <td>Mercedes G 65</td>
+                <td>Tesla Cybertruck</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>$520,000</td>
+                <td>$470,000</td>
+                <td>$3,600,000</td>
+                <td>$300,000</td>
+                <td>$80,000</td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>759 hp</td>
+                <td>563 hp</td>
+                <td>1500 hp</td>
+                <td>621 hp</td>
+                <td>845 hp</td>
+            </tr>
+            <tr>
+                <td>Top Speed</td>
+                <td>350 km/h</td>
+                <td>250 km/h</td>
+                <td>350 km/h</td>
+                <td>230 km/h</td>
+                <td>209 km/h</td>
+            </tr>
+            <tr>
+                <td>Seats</td>
+                <td>2</td>
+                <td>5</td>
+                <td>2</td>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ================= CART ================= -->
+    <div class="section" id="cart">
+        <h2>My Cart</h2>
+        <table class="big-table">
+            <tr class="head">
+                <td>Car</td>
+                <td>Price</td>
+            </tr>
+            <tr>
+                <td>Lamborghini Aventador SVJ</td>
+                <td>$520,000</td>
+            </tr>
+            <tr>
+                <td>Tesla Cybertruck</td>
+                <td>$80,000</td>
+            </tr>
+            <tr>
+                <td><b>Total</b></td>
+                <td><b>$600,000</b></td>
+            </tr>
+        </table>
+        <br>
+        <a href="#order" class="btn orange">Order All Items</a>
+    </div>
+
+    <!-- ================= ORDER FORM ================= -->
+    <div class="section" id="order">
+        <h2>Place Your Order</h2>
+        <div class="form-box">
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email"><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone"><br><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" id="address"><br><br>
+
+            <label for="car">Select Car:</label><br>
+            <select id="car">
+                <option>Lamborghini Aventador SVJ</option>
+                <option>Rolls-Royce Phantom Series II</option>
+                <option>Bugatti Chiron Pur Sport</option>
+                <option>Mercedes-Benz G 65 AMG</option>
+                <option>Tesla Cybertruck</option>
+            </select>
+            <br><br>
+
+            <label>Payment Method:</label><br>
+            <input type="radio" name="pay" id="cash">
+            <label for="cash">Cash</label>
+            <input type="radio" name="pay" id="card">
+            <label for="card">Card</label>
+            <br><br>
+
+            <input type="checkbox" id="agree">
+            <label for="agree">I agree to the terms and conditions</label>
+            <br><br>
+
+            <a href="#cars" class="btn orange">Confirm Order</a>
+        </div>
+    </div>
+
+</body>
+</html>
