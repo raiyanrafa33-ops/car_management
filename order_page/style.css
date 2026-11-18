@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Yu Gothic UI, sans-serif;
+}
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+nav h2 {
+    color: white;
+    margin-left: 20px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 25px 30px;
+}
+nav a:hover,
+nav a.active {
+    background: navy;
+}
+.profile {
+    position: relative;
+    margin: 0 20px;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+.cue-card {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    border: 1px solid black;
+    padding: 15px;
+    display: none;
+    width: 200px;
+}
+.cue-card p {
+    margin: 5px 0;
+}
+.cue-card button {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    margin-top: 8px;
+}
+.container {
+    margin: 20px 40px;
+}

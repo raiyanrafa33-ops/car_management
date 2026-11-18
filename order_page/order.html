@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarSphere - Place Order</title>
+    <link rel="icon" href="../homePage/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>Welcome to CarSphere</h2>
+        <div class="nav-right">
+            <ul>
+                <li><a href="../customer_dashboard/Customer_Dashboard.html">Dashboard</a></li>
+                <li><a href="../homePage/home.html">Home</a></li>
+                <li><a href="../cars/cars.html">Cars</a></li>
+                <li><a href="../contacts/contacts.html">Contacts</a></li>
+            </ul>
+            <div class="profile">
+                <img id="navAvatar" src="User_Icon.png" alt="Profile">
+                <div id="cueCard" class="cue-card">
+                    <p><b>Sabbir Ahmed</b></p>
+                    <p>sabbir.carsphere@gmail.com</p>
+                    <p>Status: Customer</p>
+                    <button id="logoutBtn">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Purchase Vehicle</h2>
+        <form onsubmit="return placeOrder(event)">
+            <table cellpadding="6">
+                <tr>
+                    <td><b>Select Vehicle:</b></td>
+                    <td>
+                        <select id="carSelect" onchange="updatePrice()">
+                            <option value="520000">Lamborghini Aventador SVJ</option>
+                            <option value="460000">Rolls-Royce Phantom Series II</option>
+                            <option value="3600000">Bugatti Chiron Pur Sport</option>
+                            <option value="370000">Mercedes-Benz G 65 AMG</option>
+                            <option value="100000">Tesla Cybertruck</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Vehicle Price:</b></td>
+                    <td><input type="text" id="carPrice" value="$520,000" readonly></td>
+                </tr>
+                <tr>
+                    <td><b>Delivery Date:</b></td>
+                    <td><input type="date" id="orderDate" required></td>
+                </tr>
+                <tr>
+                    <td><b>Delivery Address:</b></td>
+                    <td><input type="text" id="deliveryAddress" value="Uttara, Dhaka" required></td>
+                </tr>
+                <tr>
+                    <td><b>Payment Method:</b></td>
+                    <td>
+                        <select id="paymentMethod">
+                            <option value="Bank Transfer">Bank Transfer</option>
+                            <option value="Card">Credit / Debit Card</option>
+                            <option value="Mobile Banking">Mobile Banking</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Confirm Purchase</button></td>
+                </tr>
+            </table>
+        </form>
+        <p id="orderMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
