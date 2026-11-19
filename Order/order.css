@@ -1,0 +1,114 @@
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+/* sticky: scroll korleo upore thake */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+    padding: 15px;
+}
+.navbar h2 {
+    display: inline;           /* inline */
+    color: white;
+    margin-right: 40px;
+}
+.navbar a {
+    display: inline;           /* inline */
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+/* fixed: screen er ek jaygay atka thake */
+.fixed-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: navy;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+/* static: normal position (default) */
+.section {
+    position: static;
+    width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid gray;
+}
+.section h2 {
+    border-bottom: 2px solid goldenrod;
+    padding-bottom: 8px;
+}
+
+/* grid: ek pashe pic, onno pashe spec */
+.car {
+    position: relative;        /* relative */
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+.car-img img {
+    display: block;            /* block */
+}
+.car-info {
+    padding: 10px;
+}
+.price {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid gray;
+    padding: 8px;
+}
+.big-table {
+    width: 100%;
+    text-align: center;
+}
+.head {
+    background-color: black;
+    color: white;
+}
+
+/* button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+.blue {
+    background-color: navy;
+}
+.orange {
+    background-color: darkorange;
+}
+
+/* order form */
+.form-box {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
